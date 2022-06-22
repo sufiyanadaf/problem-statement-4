@@ -1,0 +1,86 @@
+
+ <div class="row">
+    <div id="box" class="col-5">
+        <h4 style="text-decoration: underline;">Registration Form</h4>
+        <form [formGroup]="myForm">
+            <label>Enter First name:</label>
+            <br>
+            <input type="text" formControlName="first_name" placeholder="Enter_Firstname">
+            <p *ngIf="first_name.touched && first_name.invalid" class="text-danger">
+                Enter Your First_name
+            </p>
+            <br><br>
+            <label>Enter Last name:</label>
+            <br>
+            <input type="text" formControlName="last_name" placeholder="Enter_Lastname">
+            <p *ngIf="last_name.touched && last_name.invalid">
+                Enter Your last_name
+            </p>
+            <br><br>
+            <label>Enter User name:</label>
+            <br>
+            <input type="text" formControlName="username" placeholder="Enter_username">
+            <p *ngIf="username.touched && username.invalid">
+                Enter Username
+            </p>
+            <br><br>
+            <label>Enter password:</label>
+            <br>
+            <input type="password" formControlName="password" placeholder="Enter_Password">
+            <p *ngIf="password.touched && password.invalid">
+                Enter Your password
+            </p>
+            <br><br>
+            <label>Enter Gender:</label>
+            <br>
+            <input id="input" type="radio" formControlName="gender" name="gender" value="male">
+            <label>Male</label>
+            <input id="input" type="radio" formControlName="gender" name="gender" value="female">
+            <label>Female</label>
+            <input id="input" type="radio" formControlName="gender" name="gender" value="other">
+            <label>Others</label>
+            <p *ngIf="gender.touched && gender.invalid">
+                Enter Your First_name
+            </p>
+            <br><br>
+            <button class="btn btn-success" (click)="submit()">Submit</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-danger" type="reset" >Clear</button>
+        </form>
+    </div>
+    <div class="col-7">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>SI.No</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Gender</th>
+                    <th>Activity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr *ngFor="let item of myArray , let i=index">
+                   <td>{{i+1}}</td>
+                   <td>{{item.first_name}}</td>
+                   <td>{{item.last_name}}</td>
+                   <td>{{item.username}}</td>
+                   <td>{{item.password}}</td>
+                   <td>{{item.gender}}</td>
+                   <td><button class="btn btn-danger" (click)="delete1(i)">Delete</button></td> 
+                   </tr> -->
+                  <tr *ngFor="let item of Array , let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{item.first_name}}</td>
+                    <td>{{item.last_name}}</td>
+                    <td>{{item.username}}</td>
+                    <td>{{item.password}}</td>
+                    <td>{{item.gender}}</td>
+                    <td><button class="btn btn-danger" (click)="delete2(i)">Delete</button></td>
+                   </tr>
+                </tbody>
+              </table>
+    </div>
+ </div>
+ <router-outlet></router-outlet>
