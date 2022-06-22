@@ -1,0 +1,49 @@
+{
+  "Users": [
+    {
+      "first_name": "Sufiya",
+      "last_name": "Nadaf",
+      "username": "sufiya@123",
+      "password": "1234567",
+      "gender": "female",
+      "id": 1
+    },
+    {
+      "first_name": "Sameer",
+      "last_name": "kunchur",
+      "username": "sameer@123",
+      "password": "huhoiho",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "first_name": "Rajiya",
+      "last_name": "Nadaf",
+      "username": "rajiya@123",
+      "password": "hc bkcd",
+      "gender": "female",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "first_name": "Sufiya",
+      "last_name": "Nadaf",
+      "username": "skjbd;jbjas",
+      "password": "jkbk;sjadbjsa",
+      "gender": "female",
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,31 @@
+// #box{
+//     width:400px;
+//     height: 500px;
+//     margin-left: 50px;
+//     border: 2px solid black;
+//     padding-left: 30px;
+//     margin-top: 50px;
+// }
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+input{
+    font-size: 15px;
+    width: 200px;
+    height: 25px;
+}
+input.touched{
+    border: 2px solid red;
+}
+#input{
+    width:45px;
+}
+#box{
+    border: 2px solid black;
+    width: 350px;
+    height:500px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 80px;
+}
